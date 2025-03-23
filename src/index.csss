@@ -1,0 +1,341 @@
+/* @import '../node_modules/bootstrap/scss/bootstrap.scss' */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Archivo", serif;
+}
+a{
+    text-decoration: none;   
+}
+
+/* ///// NAVBAR ///////// */
+#navbar{
+    background-color: #fff;
+    color: #ad5347;
+    padding: 0;
+    /* display: flex; */
+}
+#navbar a{
+    color: #ad5347;
+}
+#navbar ul li a:hover{
+    border-bottom: 3px solid #ad5347;
+}
+#navbar img{
+    width: 80px;
+    border-radius: 50%;
+}
+#navbar ul{
+    position: absolute;
+    right: 100px;
+}
+#navbar ul li{
+    margin: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* /////// HERO-SECTION //////// */
+#hero-section{
+    height: 70vh;
+    background-image: url('./assets/3.jpg');
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ////////// WHAT WE DO ////////// */
+#what-we-do #content{
+    margin-top: 0px;
+}
+#span{
+    color: #ad5347;
+}
+#what-we-do img{
+    width: 300px;
+    height: 200px;
+}
+#what-we-do h6{
+    color: #ad5347;
+}
+#carousel{
+ width: 50%;  
+ position: absolute; 
+ right: 0;
+}
+#carousel .carousel-item{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+    z-index: 0;
+}
+
+
+/* ////// OUTER-DIV //////// */
+.outer-div{
+    width: 75%;
+    align-self: center;
+    background-color: #ad5347;
+    height: 50vh;
+    position: relative;
+    top: 0px;
+    left: 190px;
+    z-index: -2;
+    box-shadow: -10px -10px 10px 5px wheat ;
+}
+.inner-div{
+    width: 100%;
+    height: auto;
+    /* padding-inline: 100px; */
+    position: relative;
+    bottom: 250px;
+    /* background-color: wheat; */
+}
+.inner-div h2{
+    color: white;
+    text-align: center;
+    text-transform: "";
+    margin-bottom: 30px;
+}
+.card-div{
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    /* padding-inline: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.inner-div .card{
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+.inner-div .card img{
+    width: 150px;
+    align-self: center;
+} 
+
+
+/* ////// IMPACT ///////// */
+.impact{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    column-gap: 80px;
+    row-gap: 50px;
+}
+.impact .card{
+    width: 300px;
+    height: 280px;
+    text-align: center;
+    padding: 20px;
+    border: 3px dotted wheat;
+    border-radius: 30px;
+}
+.impact .card h3{
+    color: #ad5347;
+    margin-top: 50px;
+}
+.impact .card h5{
+    color: rgb(241, 205, 137);
+}
+.impact .card p{
+    font-size: 13px;
+    color: gray;
+}
+.impact .card .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ad5347;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 100px;
+    top: -35px;
+}
+.impact .card .circle img{
+    width: 50px;
+}
+
+
+/* ////// STORY /////// */
+#story{
+    height: auto;
+    width: 100%;
+    padding: 40px;
+    color: #ad5347;
+}
+#story img{
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+}
+
+
+/* //////// MESSAGE ///////// */
+#message{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#message .card{
+    width: 600px;
+    height: 290px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#message .card h1{
+    font-size: 150px;
+    color: #ad5347;
+}
+#message .card p{
+    color: #ad5347;
+    font-weight: 700;
+}
+#message .card h5{
+    position: relative;
+    bottom: 70px;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(89, 87, 87);
+}
+#message .card h6{
+    position: relative;
+    bottom: 50px;
+    font-size: larger;
+    font-weight: 300;
+    color: rgb(104, 100, 100);
+}
+#message .card p{
+    position: relative;
+    bottom: 50px;
+}
+
+/* //////// AWARD ///////// */
+#award{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+#award .card{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 30%;
+}
+#award .card img{
+    width: 100px;
+}
+
+/* /////// FOOTER //////// */
+#footer{
+    padding-inline: 100px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .box{
+    margin-inline: 100px;
+}
+
+
+/* //////SLIDER /////////////// */
+#slider{
+    width: 100%;
+    height: auto;
+}
+#slider .carousel-inner{
+    padding: 1rem;
+}
+#slider .card{
+    margin: 0.5em;
+}
+.img-wrapper{
+    max-width: 100%;
+    height: 17em;
+}
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.slider-container .card{
+    overflow: hidden;
+}
+/* .card img{
+    height: 200px;
+} */
+
+
+
+@media (max-width : 768px){
+    #header{
+        display: none;
+    }
+    #navbar ul{
+        position: relative;
+        left: 10px;
+    }
+    #carousel{
+        display: none;
+    }
+    .outer-div{
+        width: 90%;
+        position: relative;
+        left: 20px;
+        display: none;
+    }
+    .inner-div{
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding: 0%;
+        /* bottom: 0px; */
+    }
+    .inner-div h2{
+        color: #ad5347;
+        margin: 0px;
+    }
+    .card-div{
+        padding: 20px;
+    }
+    .inner-div .card{
+        width: 220px;
+        height: auto;
+        text-align: center;
+    }
+    .inner-div .card p{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:576px){
+    #slider .carousel-inner{
+        display: flex;
+    }
+    #slider .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }  
+}
