@@ -1,18 +1,16 @@
 import React from 'react'
 import Navbar from '../Component/Navbar'
-import Events from '../Component/Home/Events'
 import Footer from '../Component/Footer'
-import Sliders from '../Component/Sliders'
+import EventGrid from '../Component/EventGrid'
 
 const EventPage = () => {
   return (
     <>
       <Navbar/>
-      <div className='container-fluid py-5'>
-      {/* <Events/> */}
-      <Sliders/>
-      </div>
+      <div className='container-fluid' style={{marginBlockStart:100}}>
+      <EventGrid/>
       <Footer/>
+      </div>
     </>
   )
 }

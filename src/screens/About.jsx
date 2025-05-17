@@ -1,16 +1,17 @@
 import React from 'react'
-import Navbar from '../Component/Navbar'
 import AboutUs from '../Component/Home/AboutUs'
 import Footer from '../Component/Footer'
+import Navbar from '../Component/Navbar'
+import Poster from '../assets/3.jpg'
 
 const About = () => {
   return (
     <>
       <Navbar/>
-      <div className='container-fluid py-5'>
+      <div className='container-fluid' style={{marginBlockStart:100}}>
       <AboutUs/>
-      </div>
       <Footer/>
+      </div>
     </>
   )
 }

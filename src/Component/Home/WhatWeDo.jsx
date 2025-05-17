@@ -1,7 +1,16 @@
 import React from 'react'
-import Image1 from '../../assets/1.jpg'
+import Image1 from '../../assets/30.jpg'
+import Image2 from '../../assets/28.jpg'
+import Image3 from '../../assets/31.jpg'
+import Image4 from '../../assets/25.jpg'
 
 const WhatWeDo = () => {
+    let cards = [
+        {img: Image1, title: "Raising money to help", description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"},
+        {img: Image2, title: "Close work with services", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," },
+        {img: Image3, title: "Protecting animal area", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"},
+        {img: Image4, title: "Pro Guided tours only", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"}
+    ]
   return (
     <div className="container-fluid service py-5 bg-light">
             <div className="container py-5">
@@ -10,52 +19,20 @@ const WhatWeDo = () => {
                     <h1 className="mb-0">What we do to protect environment</h1>
                 </div>
                 <div className="row g-4">
-                    <div className="col-md-6 col-lg-6 col-xl-3">
+                    {cards.map((item, index) => {
+                        return(
+                        <div className="col-md-6 col-lg-6 col-xl-3" key={index}>
                         <div className="service-item">
-                            <img src={Image1} className="img-fluid w-100" alt="Image"/>
+                            <img src={item.img} className="img-fluid w-100" style={{height:400}} alt="Image"/>
                             <div className="service-link">
-                                <a href="#" className="h4 mb-0">Raising money to help</a>
+                                <a href="#" className="h4 mb-0">{item.title}</a>
                             </div>
                         </div>
-                        <p className="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="service-item">
-                            <img src={Image1} className="img-fluid w-100" alt="Image"/>
-                            <div className="service-link">
-                                <a href="#" className="h4 mb-0"> close work with services</a>
-                            </div>
+                        <p className="my-4">{item.description}</p>
                         </div>
-                        <p className="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                        )
+                    })}
                     </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="service-item">
-                            <img src={Image1} className="img-fluid w-100" alt="Image"/>
-                            <div className="service-link">
-                                <a href="#" className="h4 mb-0">Pro Guided tours only</a>
-                            </div>
-                        </div>
-                        <p className="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="service-item">
-                            <img src={Image1} className="img-fluid w-100" alt="Image"/>
-                            <div className="service-link">
-                                <a href="#" className="h4 mb-0">Protecting animal area</a>
-                            </div>
-                        </div>
-                        <p className="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
-                    </div>
-                    <div className="col-12">
-                        <div className="d-flex align-items-center justify-content-center">
-                            <a className="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
   )

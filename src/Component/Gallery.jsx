@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/Logo.jpg'
+import Logo from '../assets/Logo.png'
 
 const Gallery = () => {
 
@@ -20,7 +20,7 @@ const Gallery = () => {
         <div className='row'>
         {
             GridPic.map((item, index) => 
-                <div className="col-md-3 col-lg-3 col-sm-6 g-5">
+                <div className="col-md-3 col-lg-3 col-sm-6 g-5" key={index}>
                     <div className='bg-primary text-light d-flex flex-column jusitfy-content-between align-items-center p-3'>
                     <img src={item.image} alt="" style={{borderRadius:30, width:150}}/>
                     <p>{item.desc}</p>
